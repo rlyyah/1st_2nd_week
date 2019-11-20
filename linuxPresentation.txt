@@ -1,0 +1,109 @@
+kappa keppo
+tripa seppo
+I like trains very much
+
+Being a benefit of Mr Kite
+Cry me a river
+I gave you my hearth
+TNT
+
+1.nano, cat, head, tail, more and less
+
+nano - open text file in editor - lets you input, delete, find or even justify the text. 
+You can save all or even ask for help
+
+cat - shows you insides of the file in terminal
+
+head - gives you x first lines of document in terminal
+
+tail - gives you x last lines of document in terminal
+
+more - is a command to view (but not modify) the contents of a text file one screen at a time
+
+less - is a terminal pager program systems used to view (but not change) the contents of a text file one screen at a time.
+
+With code -d <file> <file>, you can open 2 test files at the same time and compare them,
+There is also -a to add an folder to last active window, 
+-g <file:line[:character]> to open a file at a specified line and character position
+-n Force to open new window,
+-r to force a file or a folder in a already opened window
+-w to wait for file or folder to be closed before returning 
+-h to help and check the others arguments
+
+To open google chrome via TERMINAL just type "google-chrome"
+
+2.copying and removing
+
+cp -i ./linuxCC.txt ./CopyHere/
+rm ./linuxCC.txt
+
+moving takes more time than copying bc moving also removes file from current location
+
+3. wget -o
+
+wget command downloads files served with HTTP, HTTPS, or FTP over a network.
+can work in the background, while the user is not logged on, 
+which allows you to start a retrieval and disconnect from the system
+
+wget -o (--output-file=logfile) Log all messages to logfile. 
+The messages are normally reported to standard error
+
+wget -O (-O file, --output-document=file) 
+The documents will not be written to the appropriate files, 
+but all will be concatenated together and written to file.
+If "-" is used as file, documents will be printed to standard output, 
+disabling link conversion. (Use "./-" to print to a file literally named "-".)
+
+4.sudo su
+
+sudo - you are root for one command
+'su-' - logs you into root with the root environment/
+(as opposed to 'su' which logs you into root with your environment)
+
+
+will put you into a root environment but it will ask you for your user password 
+instead of the root password 
+(once sudo has given you root privileges, su - can be executed with no password
+
+5. apt, aptitude, dpkg, htop, top
+
+apt (advanced package tool) - is the command line tool to interact with the packaging system
+A Package Management System is a set of tools that will help you install, remove, and change 
+packages easily. So apt-get is like a clever dpkg. HAS SUPER COW POWERS
+
+aptitude - then came along. It uses the libraries apt-get uses and actually has an 
+interactive UI (user interface). This aptitude does not have Super Cow Powers
+
+dpkg - pkg only installs a package, 
+so doing dpkg -i packageName.deb will only install this Deb package, 
+and will notify you of any dependencies that need to be installed
+
+htop - you can see all the processes running on the system, along with their full command lines
+top - shows you what the computer is doing, how many proccesses are running, how many users,
+
+6. aliases
+
+Aliases are like custom shortcuts used to represent a command 
+(or set of commands) executed with or without custom options
+
+$ alias - listing current aliases 
+
+$ alias shortName="your custom command here" - Creating temporary alias
+
+to keep aliases between sessions, 
+you can save them in your user’s shell configuration profile file
+
+vim ~/.bashrc         // vim ~/.bashrc, ~/.config/fish/config.fish
+#My custom aliases
+alias home=”ssh -i ~/.ssh/mykep.pem tecmint@192.168.0.100”
+alias ll="ls -alF"
+source ~/.bashrc
+
+delete
+
+unalias alias_name
+unalias -a [remove all alias]
+
+
+
+

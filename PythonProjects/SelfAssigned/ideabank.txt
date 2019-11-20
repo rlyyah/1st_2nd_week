@@ -1,0 +1,3 @@
+['Pol']
+['Pol', 'Ska']
+['Pol', 'Ska', 'gora']
